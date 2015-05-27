@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:duration="200">
+        <layer-list>
+            <item android:drawable="@drawable/touch1" />
+        </layer-list>
+    </item>
+    <item android:duration="200">
+        <layer-list>
+            <item android:drawable="@drawable/touch2" />
+        </layer-list>
+    </item>
+    <item android:duration="200">
+        <layer-list>
+            <item android:drawable="@drawable/touch3" />
+        </layer-list>
+    </item>
+    <item android:duration="200">
+        <layer-list>
+            <item android:drawable="@drawable/touch4" />
+        </layer-list>
+    </item>
+    <item android:duration="200">
+        <layer-list>
+            <item android:drawable="@drawable/touch5" />
+        </layer-list>
+    </item>
+    <item android:duration="200">
+        <layer-list>
+            <item android:drawable="@drawable/touch1" />
+        </layer-list>
+    </item>
+</animation-list>

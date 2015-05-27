@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/c_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        layout="@layout/component_fragment_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_sale_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_order"
+            android:contentDescription="@string/app_name"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/sale_menu"
+            android:textSize="18sp"
+            android:alpha="0.5"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#f3f3f3"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_instock_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_loginin"
+            android:contentDescription="@string/app_name"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:alpha="0.5"
+            android:text="@string/instock_menu"
+            android:textColor="#000"
+            android:textSize="18sp"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#f3f3f3"
+        android:orientation="horizontal"></LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_outstock_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/icon_logout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:alpha="0.5"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="@string/outstock_menu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#f3f3f3"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/ll_account_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/icon_orderlist" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:alpha="0.5"
+            android:textColor="#000"
+            android:text="@string/account_stock_menu" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#f3f3f3"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/ll_online_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/icon_online" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:alpha="0.5"
+            android:textColor="#000"
+            android:text="@string/online_menu" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#f3f3f3"
+        android:orientation="horizontal"/>
+    <LinearLayout
+        android:id="@+id/ll_shopping_stock"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/icon_drawer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:alpha="0.5"
+            android:textColor="#000"
+            android:text="@string/shopping_stock" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#f3f3f3"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/ll_shopping_sale_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/icon_piechart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:alpha="0.5"
+            android:textColor="#000"
+            android:text="@string/shopping_sale_amount" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:background="#f3f3f3"
+        android:orientation="horizontal"/>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="200dp"
+    android:background="@color/whites"
+    android:paddingLeft="20dp"
+    android:paddingBottom="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical" >
+    <Button 
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/btn_dinner_hall"
+        android:layout_width="100dp"
+        android:text="@string/dinner_hall"
+        android:background="@drawable/btn_button_bule"
+        android:layout_height="wrap_content"
+        />
+    <Button 
+        android:layout_marginLeft="10dp"
+        android:text="@string/take_away"
+        android:layout_toRightOf="@id/btn_dinner_hall"
+        android:background="@drawable/btn_button_bule"
+        android:id="@+id/btn_take_away"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        />
+    <Button 
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btn_dinner_hall"
+        android:id="@+id/btn_check_out"
+        android:text="@string/go_account"
+        android:background="@drawable/btn_button_bule"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/btn_orders"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_check_out"
+        android:layout_alignBottom="@+id/btn_check_out"
+        android:layout_alignLeft="@+id/btn_take_away"
+        android:background="@drawable/btn_button_bule"
+        android:text="@string/check_out" />
+
+</RelativeLayout>

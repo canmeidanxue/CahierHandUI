@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/c_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/component_title_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whites"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_scan_card"
+                style="?android:attr/accessibilityEventTypes"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:background="@color/whites"
+                android:text="@string/shuaka"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_two_dimensioncode"
+                style="?android:attr/accessibilityEventTypes"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:background="@color/whites"
+                android:text="@string/scan_qrcode"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_humanwork"
+                style="?android:attr/accessibilityEventTypes"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:background="@color/whites"
+                android:text="@string/shoushu"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_contactless_card"
+                style="?android:attr/accessibilityEventTypes"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:background="@color/whites"
+                android:text="@string/IC_card"
+                android:textColor="#000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_scan_card"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/ll_two_dimensioncode"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/ll_humanwork"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/ll_contactless_card"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_membercard_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#f3f3f3" />
+    </LinearLayout>
+
+</LinearLayout>

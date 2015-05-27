@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:background="@color/whites"
+    android:layout_height="match_parent"
+    tools:ignore="MergeRootFrame" >
+    <include
+        android:id="@+id/title_menu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="33dp"
+        layout="@layout/component_activity_query_title" />
+
+    <RelativeLayout
+        android:id="@+id/sp_tran_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/title_menu"
+        android:gravity="center_vertical">
+
+        <Spinner
+            android:id="@+id/trans_type_spinner"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="@drawable/input"
+            android:entries="@array/trans_type_array" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/trans_type"
+            android:textColor="#000"
+            android:alpha="0.7"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignRight="@+id/trans_type_spinner"
+            android:layout_centerVertical="true"
+            android:src="@drawable/down"
+             />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sp_tran_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/sp_tran_type"
+        android:gravity="center_vertical">
+
+        <Spinner
+            android:id="@+id/trans_date_spinner"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:background="@drawable/input"
+            android:entries="@array/time_range_array" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/time_range"
+            android:textColor="#000"
+            android:alpha="0.7"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignRight="@+id/trans_date_spinner"
+            android:layout_centerVertical="true"
+            android:src="@drawable/down"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_trans_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/sp_tran_time"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/trans_time"
+            android:textColor="#000"
+            android:alpha="0.7"
+            android:textSize="12sp" />
+
+        <EditText
+            android:hint=""
+            android:id="@+id/start_et"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:singleLine="true"
+            android:background="@drawable/input_s"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/end_et"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:hint=""
+            android:layout_marginLeft="30dp"
+            android:singleLine="true"
+            android:background="@drawable/input_s"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_serialnum"
+        android:layout_below="@id/ll_trans_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/sale_code"
+            android:textColor="#000"
+            android:alpha="0.7"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/serial_transnumber_et"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/input"
+            android:singleLine="false"
+            android:hint=""
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/ll_serialnum"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:text="@string/make_sure"
+            android:background="@drawable/buttonshape"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

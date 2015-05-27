@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="numbers_array">
+        <item>-1</item>
+        <item>400</item>
+        <item>700</item>
+        <item>304</item>
+        <item>813</item>
+        <item>814</item>
+    </string-array>
+    <string-array name="numbers_array_type">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="numbers_array_time">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="trans_type_array">
+        <item>全部</item>
+        <item>现金消费</item>
+        <item>银行卡消费</item>
+        <item>会员卡消费</item>
+        <item>支付宝消费</item>
+        <item>微信消费</item>
+    </string-array>
+    <string-array name="time_range_array">
+        <item>今天</item>
+        <item>昨天</item>
+        <item>本周</item>
+        <item>上周</item>
+        <item>本月</item>
+        <item>上月</item>
+        <item>选择时间范围</item>
+    </string-array>
+    <string-array name="rui_gong_printer_type">
+        <item>RG-P88V</item>
+        <item>RG-LP58B</item>
+        <item>RG-LW888</item>
+        <item>RG-SD2480</item>
+        <item>RG-GK888</item>
+        <item>RG-MDP58A</item>
+        <item>RG-LP80B</item>
+        <item>TTP-244Pro</item>
+        <item>RG-LP58</item>
+        <item>RG-P761V</item>
+    </string-array>
+
+</resources>

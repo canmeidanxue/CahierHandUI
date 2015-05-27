@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MergeRootFrame" >
+
+    <!-- 标题 -->
+
+    <include
+        android:id="@+id/title_menu"
+        layout="@layout/component_choose_title" />
+	 <include
+      	android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/component_activity_bottom" />
+    <LinearLayout
+        android:id="@+id/ll_gridview"
+        android:layout_above="@id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_menu"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="20dp"
+            android:background="@color/whites"
+            android:gravity="center"
+            android:numColumns="2"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="0dp"
+            android:stretchMode="columnWidth"
+             >
+        </GridView>
+    </LinearLayout>
+</RelativeLayout>
